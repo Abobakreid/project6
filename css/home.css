@@ -1,0 +1,429 @@
+/*
+  name : Friendscode;
+  by   :Abo bakr eid;
+*/
+
+
+/* start the header */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.links2 ul li:not(:last-of-type) a {
+    display: block;
+    padding: 8px 10px;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.links2 ul li:not(:last-of-type) a.active {
+    background-color: #AAA;
+}
+
+.links2 ul li:last-of-type span {
+    display: block;
+    padding: 8px 10px;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+    text-transform: uppercase
+}
+
+.head {
+    background: url("../images/01.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.head .overlo {
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+}
+
+.head .overlo .brand {
+    float: left;
+    width: 20%;
+}
+
+.head .overlo .brand a {
+    color: white;
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.head .overlo .links {
+    float: left;
+    width: 60%;
+    padding-left: 20%;
+}
+
+.head .overlo .links>ul>li:not(:last-of-type) {
+    padding: 20px 0;
+}
+
+.head .overlo .links ul li:not(:last-of-type) a {
+    display: inline-block;
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, .7);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.head .overlo .links ul li:not(:last-of-type) span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, .7);
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+
+.head .overlo .links ul li:not(:last-of-type) a:hover>span {
+    width: 100%;
+    background-color: rgba(57, 57, 57, 0.5);
+    color: rgba(255, 255, 255, 1);
+}
+
+.head .overlo .ser {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.head .overlo .ser span {
+    display: inline-block;
+    padding: 28px 0;
+    text-transform: uppercase;
+}
+
+.head .overlo .bar {
+    padding: 32px 0 24px;
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+
+.head .overlo .bar i {
+    cursor: pointer;
+}
+
+.head .overlo .text {
+    margin-top: 30vh;
+    padding: 0 10%;
+}
+
+.head .overlo .text>h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+.head .overlo .text p {
+    color: #868383;
+}
+
+@media (max-width: 768px) {
+    .head .overlo .container .links {
+        display: none;
+    }
+    .head .overlo .container .ser {
+        display: none
+    }
+    .head .overlo .container .brand {
+        width: 50%;
+    }
+    .head .overlo .container .bar {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .head .overlo .container .brand {
+        float: left;
+        width: 25%;
+    }
+    .head .overlo .container .links {
+        padding-left: 4%;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1500px) {
+    .head .overlo .container .brand {
+        float: left;
+        width: 25%;
+    }
+    .head .overlo .container .links {
+        padding-left: 15%;
+        width: 50%;
+    }
+}
+
+
+/* end the header */
+
+
+/* start the about */
+
+.about {
+    padding: 50px;
+}
+
+.about .text {
+    width: 50%;
+    margin-right: 2%
+}
+
+.about .text h2 {
+    margin: 0;
+}
+
+.about .text button {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.about .img {
+    width: 48%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.about .img img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+    .about .text {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .about .img {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+/* end the about */
+
+
+/* start the example */
+
+.example {
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.example .img {
+    width: 48%;
+    margin-right: 2%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.example .img img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.example .text {
+    width: 50%;
+    padding: 0 20px;
+    border-left: 2px solid #CCC;
+}
+
+.example .text p {
+    color: #CCC;
+}
+
+@media (max-width: 991px) {
+    .example .text {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .example .img {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+/* end the example */
+
+
+/* start the form */
+
+.form {
+    padding: 50px;
+}
+
+.form .img img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/* end the form */
+
+
+/* start the pricing table */
+
+.pricing {
+    padding: 50px;
+}
+
+.pricing h2 {
+    margin-top: 0;
+}
+
+.pricing p {
+    color: #BBB;
+}
+
+.pricing .row .pric {
+    width: 22%;
+}
+
+.pricing .row .pric img {
+    display: block;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.pricing .row .pric span {
+    display: block;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.pricing .row>.pric a {
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .pricing .row {
+        display: block;
+    }
+    .pricing .row .pric {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .pricing .row {
+        display: block;
+    }
+    .pricing .row .pric {
+        width: 48%;
+        display: inline-block;
+    }
+}
+
+
+/* end the pricing table */
+
+
+/* start the contact  */
+
+.contact {
+    background: url("../images/03.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.contact .overlo {
+    background-color: rgba(0, 0, 0, .8);
+    padding: 90px 50px 0;
+    color: white;
+}
+
+.contact .overlo .con {
+    background-color: white;
+    padding: 80px 10px;
+    color: black;
+}
+
+.contact .overlo .con p {
+    color: #BBB;
+}
+
+.contact .overlo .con form input {
+    background-color: #AAA;
+    outline: none;
+    padding: 8px 15px;
+    width: 50%;
+}
+
+.contact .overlo .con form button {
+    background-color: black;
+    padding: 8px 15px;
+    color: white;
+}
+
+.contact .overlo .rights {
+    padding: 50px 0;
+    margin-top: 20px;
+    border-top: 1px solid #CCC;
+}
+
+.contact .overlo .rights .all {
+    width: 50%;
+}
+
+.contact .overlo .rights .designed {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .contact .overlo {
+        background-color: rgba(0, 0, 0, .8);
+        padding: 90px 10% 0;
+        color: white;
+    }
+    .contact .overlo .con {
+        padding: 30px 5%;
+    }
+    .contact .overlo .con form input {
+        width: 100%;
+    }
+    .contact .overlo .con form button {
+        width: 100%;
+    }
+    .contact .overlo .rights .all {
+        width: 100%;
+        float: none;
+    }
+    .contact .overlo .rights .designed {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+/* end the conatct */
